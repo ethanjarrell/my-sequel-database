@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans" rel="stylesheet">
+    <title>My Valuables</title>
+  </head>
+  <body>
+    <div class="outerContainer">
+      <form active="/" method="post">
+                  <header class="thisHeader">
+                    <span class="thisList">Valuables to Sell</span>
+
+
+
+                  </header>
+                  <input id="input" type="text" name="toSell" placeholder="Item to Sell">
+
+                  <input id="input" type="text" name="desc" placeholder="Description">
+
+                  <input id="input" type="text" name="Value" placeholder="Dollar Amount">
+
+                  <button class"submitButton" type="submit" name="button">SUBMIT</button>
+                  </form>
+
+
+      {{#toDoList}}
+      <div name="toDoList" class="toDoList">
+          {{#.}}
+        <div class="toDoItem">{{.}}</div>
+          {{/.}}
+        {{#.}}
+        <div class="toDoItem">{{.}}<div class="squaredOne">
+	<input type="checkbox" value="None" id="squaredOne" name="check" />
+	<label for="squaredOne"></label>
+</div></div>
+        {{/.}}
+
+        <!-- <div class="status">{{#status}}<input type="checkbox" class="checkNice">{{/status}}</div> -->
+
+
+
+
+      </div>
+      {{/toDoList}}
+
+
+  </body>
+</html>
